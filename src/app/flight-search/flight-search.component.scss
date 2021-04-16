@@ -1,0 +1,28 @@
+.flight-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+.flight-search {
+    width: 35%;
+    max-width: 270px;
+    .search-form {
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+.flight-search-results {
+    width: 60%;
+}
+@media only screen and (max-width: 768px) {
+    .flight-content {
+        flex-direction: column;
+    }
+    .flight-search,
+    .flight-search-results {
+        width: 100%;
+    }
+}
